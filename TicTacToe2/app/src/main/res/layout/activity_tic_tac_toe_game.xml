@@ -1,0 +1,202 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tirthcshahgmail.tictactoe.TicTacToeGame"
+    android:background="@drawable/main_game"
+    >
+
+    <Button
+        android:onClick="play4"
+        android:gravity="center"
+        android:textSize="70dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#ff6ff4f9"
+        android:background="@drawable/round_button1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/b4"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/b7"
+        android:layout_alignEnd="@+id/b7" />
+
+    <Button
+        android:onClick="play1"
+        android:gravity="center"
+        android:textSize="70dp"
+        android:fontFamily="sans-serif-light-condensed"
+        android:textColor="#ff6ff4f9"
+        android:background="@drawable/round_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/b1"
+        android:layout_above="@+id/b4"
+        android:layout_alignLeft="@+id/b4"
+        android:layout_alignStart="@+id/b4"
+        android:layout_alignRight="@+id/b4"
+        android:layout_alignEnd="@+id/b4" />
+
+    <Button
+        android:onClick="play5"
+        android:gravity="center"
+        android:textSize="70dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#ff6ff4f9"
+        android:background="@drawable/round_button1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/b5"
+        android:layout_alignTop="@+id/b4"
+        android:layout_toRightOf="@+id/b4"
+        android:layout_toEndOf="@+id/b4"
+        android:layout_alignBottom="@+id/b4" />
+
+    <Button
+        android:onClick="play3"
+        android:gravity="center"
+        android:textSize="70dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#ff6ff4f9"
+        android:background="@drawable/round_button1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/b3"
+        android:layout_toLeftOf="@+id/b1"
+        android:layout_toStartOf="@+id/b1"
+        android:layout_below="@+id/b1"
+        android:layout_alignBottom="@+id/b4" />
+
+    <Button
+        android:onClick="play7"
+        android:gravity="center"
+        android:textSize="70dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#ff6ff4f9"
+        android:background="@drawable/round_button1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/b7"
+        android:layout_below="@+id/b4"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:onClick="play8"
+        android:gravity="center"
+        android:textSize="70dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#ff6ff4f9"
+        android:background="@drawable/round_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b8"
+        android:layout_alignTop="@+id/b7"
+        android:layout_alignLeft="@+id/b5"
+        android:layout_alignStart="@+id/b5"
+        android:layout_alignRight="@+id/b5"
+        android:layout_alignEnd="@+id/b5"
+        android:layout_alignBottom="@+id/b7" />
+
+    <Button
+        android:onClick="play0"
+        android:textSize="70dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#ff6ff4f9"
+        android:background="@drawable/round_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b0"
+        android:layout_above="@+id/b4"
+        android:layout_toLeftOf="@+id/b1"
+        android:layout_alignTop="@+id/b1"
+        android:layout_alignLeft="@+id/b3"
+        android:layout_alignStart="@+id/b3" />
+
+    <Button
+        android:onClick="play6"
+        android:gravity="center"
+        android:textSize="70dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#ff6ff4f9"
+        android:background="@drawable/round_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b6"
+        android:layout_alignTop="@+id/b7"
+        android:layout_toLeftOf="@+id/b7"
+        android:layout_alignLeft="@+id/b3"
+        android:layout_alignStart="@+id/b3"
+        android:layout_alignBottom="@+id/b7" />
+
+    <Button
+        android:onClick="play2"
+        android:gravity="center"
+        android:textSize="70dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#ff6ff4f9"
+        android:background="@drawable/round_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b2"
+        android:layout_above="@+id/b4"
+        android:layout_toRightOf="@+id/b1"
+        android:layout_alignTop="@+id/b1"
+        android:layout_alignRight="@+id/b5"
+        android:layout_alignEnd="@+id/b5" />
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/b7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:shadowRadius="2"
+            android:shadowColor="#000000"
+            android:layout_marginRight="0dp"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#ffffff"
+            android:background="#b40bb0ff"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Main Menu"
+            android:layout_weight="1"
+            android:id="@+id/bmain" />
+
+        <Button
+            android:onClick="restart"
+            android:shadowRadius="2"
+            android:shadowColor="#000000"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="0dp"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-light"
+            android:background="#ff4a4a4a"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Restart"
+            android:id="@+id/brestart" />
+    </LinearLayout>
+
+    <TextView
+        android:background="@drawable/rb2"
+        android:fontFamily="times"
+        android:textColor="#ffffffff"
+        android:layout_marginTop="12dp"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" Player Turn "
+        android:id="@+id/textView"
+        android:layout_below="@+id/b7"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
